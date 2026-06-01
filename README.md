@@ -9,6 +9,19 @@ It installs into a **stock, unmodified graphviz** — no fork, no rebuild of
 graphviz. Everything else (every output format, every other engine) keeps
 working normally.
 
+## Example
+
+The optimized IL control-flow graph of a Dart function
+(`loop_and_branch.dart :: classify`), rendered with `dot -Kcfg`. The plugin does
+the grid layout and orthogonal bottom-to-top edge routing; the per-token syntax
+colors, optimizer "heatmap" row tints (e.g. the orange `CheckStackOverflow`
+safepoint, the blue `CheckSmi` guard), dimmed plumbing (`ParallelMove`), and
+colored branches all come from the input DOT's HTML-like labels. The generating
+source is [`example/sample-cfg.dot`](example/sample-cfg.dot) — reproduce it with
+`dot -Kcfg -Tpng example/sample-cfg.dot -o out.png`.
+
+![cfg layout example](example/sample-cfg.png)
+
 ## Build & install
 
 Requires a graphviz install discoverable via `pkg-config --exists libgvc`
