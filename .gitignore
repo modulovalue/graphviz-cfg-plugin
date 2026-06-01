@@ -6,3 +6,6 @@
 
 # Machine-specific backup of the host graphviz plugin registry (made by install)
 config6.backup
+
+# Generated render (reproduce from the .dot)
+*.svg

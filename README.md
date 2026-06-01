@@ -64,6 +64,16 @@ digraph CFG {
 }
 ```
 
+## Limitations
+
+- **Ports are ignored.** Edges always route from a block's bottom to the next
+  block's top (the CFG convention), so `node:port` / compass-port specs and
+  record/HTML cell ports have no effect on where edges attach. They are parsed
+  without error, just not honored.
+- **Routing-lane spacing** is 18pt rather than upstream's 10pt — a deliberate
+  divergence so each edge's final vertical approach stays longer than a rendered
+  arrowhead (a 10pt lane lets graphviz's arrow clipping bend the last segment).
+
 ## Files
 
 | File | Role |
@@ -88,3 +98,9 @@ plugin work without a fork — but it couples the plugin to graphviz internals:
 build it against the graphviz version you run, and expect a possible recompile
 or small tweak across major graphviz releases. The algorithm core
 (`cfg_core.c`) touches zero graphviz symbols and is unaffected.
+
+## License
+
+BSD 2-Clause — see [`LICENSE`](LICENSE). The layout algorithm in `cfg_core.c`
+is a C port of Compiler Explorer's `graph-layout-core` (BSD 2-Clause), via the
+dart-il-explorer project; attribution is retained in the license file.
