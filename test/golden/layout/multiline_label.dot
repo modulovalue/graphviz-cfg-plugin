@@ -1,0 +1,16 @@
+digraph {
+	graph [bb="0,0,98.5,129.5"];
+	node [fontname=Courier,
+		label="\N",
+		shape=box
+	];
+	B0	[height=0.5,
+		label=entry,
+		pos="49.25,111.5",
+		width=0.79514];
+	B1	[height=0.79861,
+		label="line one\nline two\nline three",
+		pos="49.25,28.75",
+		width=1.3681];
+	B0 -> B1	[pos="e,49.25,57.856 49.25,93.096 49.25,90.749 49.25,78.659 49.25,69.211"];
+}

@@ -1,0 +1,1 @@
+digraph{node[shape=box];tiny[label="x"];huge[label="a very long block label that is quite wide indeed"];tiny->huge->mid[label="medium label"]}

@@ -1,0 +1,1 @@
+digraph{node[shape=box];a;b;subgraph cluster_c{label="multi io";P;Q;R;P->Q;P->R} a->P;b->Q;Q->x;R->y}

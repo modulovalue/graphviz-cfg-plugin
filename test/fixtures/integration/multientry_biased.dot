@@ -1,0 +1,1 @@
+digraph{node[shape=box];a;b;subgraph cluster_c{label="region";P;Q;R;P->Q;Q->R} a->P[cfgbias=left];b->R[cfgbias=right];R->a}

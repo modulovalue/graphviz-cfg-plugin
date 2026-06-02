@@ -1,0 +1,20 @@
+// CFG with a clustered loop body, rendered with `dot -Kcfg`.
+// The cfg engine lays out the blocks on its grid and draws the
+// `subgraph cluster_*` box around the (contiguous) loop members.
+//   dot -Kcfg -Tpng example/sample-clusters.dot -o out.png
+digraph CFG {
+  node [shape=box, fontname="Courier"];
+  B0 [label="entry"];
+  subgraph cluster_loop {
+    label="loop body";
+    style="filled,rounded";
+    color="#dddddd";
+    B1 [label="loop head\nBranch i<n"];
+    B2 [label="body"];
+  }
+  B3 [label="exit"];
+  B0 -> B1;
+  B1 -> B2 [cfgbias=left];
+  B2 -> B1;            // back edge
+  B1 -> B3 [cfgbias=right];
+}

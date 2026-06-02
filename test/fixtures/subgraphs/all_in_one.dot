@@ -1,0 +1,1 @@
+digraph{node[shape=box];subgraph cluster_a{label="all";A;B;C;A->B->C->A}}

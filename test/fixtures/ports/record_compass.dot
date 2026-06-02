@@ -1,0 +1,1 @@
+digraph{node[shape=record];a[label="<p>p"];a:p:s->b:n}

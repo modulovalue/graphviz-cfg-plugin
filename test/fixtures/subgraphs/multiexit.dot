@@ -1,0 +1,1 @@
+digraph{node[shape=box];e;subgraph cluster_a{label="multi-exit";P;Q;P->Q} e->P;P->x;Q->y}

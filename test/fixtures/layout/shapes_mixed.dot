@@ -1,0 +1,1 @@
+digraph{A[shape=ellipse];B[shape=box];C[shape=circle];D[shape=diamond];A->B->C->D}

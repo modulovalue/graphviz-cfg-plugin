@@ -1,0 +1,1 @@
+digraph{node[shape=record];a[label="<i>in|body|<o>out"];a:o->a:i}

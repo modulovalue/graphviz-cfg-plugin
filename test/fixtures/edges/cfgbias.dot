@@ -1,0 +1,1 @@
+digraph{node[shape=box];A->B[cfgbias=left];A->C[cfgbias=right]}

@@ -1,0 +1,82 @@
+digraph CFG {
+	graph [bb="0,0,1010.2,765",
+		bgcolor="#1e1e1e",
+		fontname=Menlo,
+		fontsize=15,
+		label=<<font color="#e6e6e6">loop_and_branch.dart</font><font color="#4ec9b0">&nbsp;&nbsp;::&nbsp;&nbsp;classify</font>>,
+		labeljust=l,
+		labelloc=t,
+		lheight=0.25,
+		lp="161,752",
+		lwidth=4.25
+	];
+	node [fontname=Menlo,
+		fontsize=12,
+		label="\N",
+		shape=plaintext
+	];
+	edge [arrowsize=0.7,
+		color="#858585",
+		penwidth=1.4
+	];
+	0	[height=1.375,
+		label=<<table border="1" color="#3c3c3c" cellborder="0" cellspacing="0" cellpadding="4" bgcolor="#252526" style="rounded"><tr><td align="left" bgcolor="#2d2d30"><b><font color="#dcdcaa">B0</font><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#4ec9b0">GraphEntry</font></b></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v0</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">Constant</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">value</font><font color="#808080">=</font><font color="#569cd6">null</font><font color="#808080">]</font></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v3</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">Constant</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">value</font><font color="#808080">=</font><font color="#b5cea8">0</font><font color="#808080">]</font></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v13</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">Constant</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">value</font><font color="#808080">=</font><font color="#b5cea8">1</font><font color="#808080">]</font></td></tr></table>>,
+		pos="620.25,689.5",
+		width=3.3819];
+	1	[height=1.375,
+		label=<<table border="1" color="#3c3c3c" cellborder="0" cellspacing="0" cellpadding="4" bgcolor="#252526" style="rounded"><tr><td align="left" bgcolor="#2d2d30"><b><font color="#dcdcaa">B1</font><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#4ec9b0">FunctionEntry</font></b></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v2</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">Parameter</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">index</font><font color="#808080">=</font><font color="#b5cea8">0</font><font color="#808080">,&nbsp;</font><font color="#4fc1ff">location</font><font color="#808080">=</font><font color="#ce9178">&quot;stack(word)&quot;</font><font color="#808080">]</font></td></tr><tr><td align="left"><font color="#585858">&nbsp;&nbsp;</font><font color="#585858">ParallelMove</font></td></tr><tr><td align="left" bgcolor="#283a44"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#569cd6">CheckSmi</font><font color="#808080">(</font><font color="#9cdcfe">v2</font><font color="#808080">)</font></td></tr></table>>,
+		pos="620.25,554.5",
+		width=5.6736];
+	0 -> 1	[cfgbias=right,
+		pos="e,611.25,604.1 611.25,639.9 611.25,638.51 611.25,623.38 611.25,613.22"];
+	8	[height=1.684,
+		label=<<table border="1" color="#3c3c3c" cellborder="0" cellspacing="0" cellpadding="4" bgcolor="#252526" style="rounded"><tr><td align="left" bgcolor="#2d2d30"><b><font color="#dcdcaa">B8</font><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#4ec9b0">JoinEntry</font></b></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v4</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">Phi</font><font color="#808080">(</font><font color="#9cdcfe">v3</font><font color="#808080">,&nbsp;</font><font color="#9cdcfe">v12</font><font color="#808080">)</font></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v5</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">Phi</font><font color="#808080">(</font><font color="#9cdcfe">v3</font><font color="#808080">,&nbsp;</font><font color="#9cdcfe">v14</font><font color="#808080">)</font></td></tr><tr><td align="left" bgcolor="#46381f"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#569cd6">CheckStackOverflow</font></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#c586c0">Branch</font><font color="#808080">&nbsp;(</font><font color="#569cd6">RelationalOp</font><font color="#808080">(</font><font color="#9cdcfe">v5</font><font color="#808080">,&nbsp;</font><font color="#9cdcfe">v2</font><font color="#808080">)</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">kind</font><font color="#808080">=</font><font color="#ce9178">&quot;&lt;&quot;</font><font color="#808080">]</font><font color="#808080">)</font><font color="#808080">&nbsp;-&gt;&nbsp;</font><font color="#dcdcaa">B3</font><font color="#808080">,&nbsp;</font><font color="#dcdcaa">B4</font></td></tr></table>>,
+		pos="620.25,408.38",
+		width=5.7778];
+	1 -> 8	[cfgbias=right,
+		pos="e,611.25,469.1 611.25,504.9 611.25,503.51 611.25,488.38 611.25,478.22"];
+	3	[height=0.75694,
+		label=<<table border="1" color="#3c3c3c" cellborder="0" cellspacing="0" cellpadding="4" bgcolor="#252526" style="rounded"><tr><td align="left" bgcolor="#2d2d30"><b><font color="#dcdcaa">B3</font><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#4ec9b0">TargetEntry</font></b></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#c586c0">Branch</font><font color="#808080">&nbsp;(</font><font color="#569cd6">TestInt</font><font color="#808080">(</font><font color="#9cdcfe">v5</font><font color="#808080">,&nbsp;</font><font color="#9cdcfe">v13</font><font color="#808080">)</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">kind</font><font color="#808080">=</font><font color="#ce9178">&quot;==&quot;</font><font color="#808080">]</font><font color="#808080">)</font><font color="#808080">&nbsp;-&gt;&nbsp;</font><font color="#dcdcaa">B5</font><font color="#808080">,&nbsp;</font><font color="#dcdcaa">B6</font></td></tr></table>>,
+		pos="385.25,266.5",
+		width=5.4653];
+	8 -> 3	[cfgbias=left,
+		color="#4ec9b0",
+		pos="e,376.25,293.85 611.25,347.7 611.25,346.64 611.25,329.75 611.25,329.75 611.25,329.75 376.25,329.75 376.25,329.75 376.25,329.75 376.25,\
+313.42 376.25,302.75"];
+	4	[height=0.75694,
+		label=<<table border="1" color="#3c3c3c" cellborder="0" cellspacing="0" cellpadding="4" bgcolor="#252526" style="rounded"><tr><td align="left" bgcolor="#2d2d30"><b><font color="#dcdcaa">B4</font><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#4ec9b0">TargetEntry</font></b></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#c586c0">DartReturn</font><font color="#808080">(</font><font color="#9cdcfe">v4</font><font color="#808080">)</font></td></tr></table>>,
+		pos="937.25,266.5",
+		width=2.0278];
+	8 -> 4	[cfgbias=right,
+		color="#f44747",
+		pos="e,937.25,293.8 629.25,347.65 629.25,345.54 629.25,311.75 629.25,311.75 629.25,311.75 937.25,311.75 937.25,311.75 937.25,311.75 937.25,\
+307.26 937.25,302.76"];
+	5	[height=0.75694,
+		label=<<table border="1" color="#3c3c3c" cellborder="0" cellspacing="0" cellpadding="4" bgcolor="#252526" style="rounded"><tr><td align="left" bgcolor="#2d2d30"><b><font color="#dcdcaa">B5</font><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#4ec9b0">TargetEntry</font></b></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v15</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">BinarySmiOp</font><font color="#808080">(</font><font color="#9cdcfe">v4</font><font color="#808080">,&nbsp;</font><font color="#9cdcfe">v5</font><font color="#808080">)</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">op_kind</font><font color="#808080">=</font><font color="#ce9178">&quot;+&quot;</font><font color="#808080">]</font></td></tr></table>>,
+		pos="170.5,158",
+		width=4.7361];
+	3 -> 5	[cfgbias=left,
+		color="#4ec9b0",
+		pos="e,170.5,185.3 376.25,239.15 376.25,237.04 376.25,203.25 376.25,203.25 376.25,203.25 170.5,203.25 170.5,203.25 170.5,203.25 170.5,\
+198.76 170.5,194.26"];
+	6	[height=0.75694,
+		label=<<table border="1" color="#3c3c3c" cellborder="0" cellspacing="0" cellpadding="4" bgcolor="#252526" style="rounded"><tr><td align="left" bgcolor="#2d2d30"><b><font color="#dcdcaa">B6</font><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#4ec9b0">TargetEntry</font></b></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v11</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">BinarySmiOp</font><font color="#808080">(</font><font color="#9cdcfe">v4</font><font color="#808080">,&nbsp;</font><font color="#9cdcfe">v5</font><font color="#808080">)</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">op_kind</font><font color="#808080">=</font><font color="#ce9178">&quot;-&quot;</font><font color="#808080">]</font></td></tr></table>>,
+		pos="620.25,158",
+		width=4.7361];
+	3 -> 6	[cfgbias=right,
+		color="#f44747",
+		pos="e,611.25,185.35 394.25,239.2 394.25,238.14 394.25,221.25 394.25,221.25 394.25,221.25 611.25,221.25 611.25,221.25 611.25,221.25 611.25,\
+204.92 611.25,194.25"];
+	7	[height=1.066,
+		label=<<table border="1" color="#3c3c3c" cellborder="0" cellspacing="0" cellpadding="4" bgcolor="#252526" style="rounded"><tr><td align="left" bgcolor="#2d2d30"><b><font color="#dcdcaa">B7</font><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#4ec9b0">JoinEntry</font></b></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v12</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">Phi</font><font color="#808080">(</font><font color="#9cdcfe">v15</font><font color="#808080">,&nbsp;</font><font color="#9cdcfe">v11</font><font color="#808080">)</font></td></tr><tr><td align="left"><font color="#d4d4d4">&nbsp;&nbsp;</font><font color="#9cdcfe">v14</font><font color="#808080">&nbsp;&lt;-&nbsp;</font><font color="#569cd6">BinarySmiOp</font><font color="#808080">(</font><font color="#9cdcfe">v5</font><font color="#808080">,&nbsp;</font><font color="#9cdcfe">v13</font><font color="#808080">)</font><font color="#808080">&nbsp;[</font><font color="#4fc1ff">op_kind</font><font color="#808080">=</font><font color="#ce9178">&quot;+&quot;</font><font color="#808080">]</font></td></tr></table>>,
+		pos="620.25,56.375",
+		width=4.8403];
+	5 -> 7	[cfgbias=right,
+		pos="e,611.25,94.802 170.5,130.7 170.5,129.64 170.5,112.75 170.5,112.75 170.5,112.75 611.25,112.75 611.25,112.75 611.25,112.75 611.25,\
+108.26 611.25,103.76"];
+	6 -> 7	[cfgbias=right,
+		pos="e,629.25,94.847 629.25,130.65 629.25,129.26 629.25,114.13 629.25,103.97"];
+	7 -> 8	[cfgbias=right,
+		pos="e,629.25,469.05 611.25,17.948 611.25,16.893 611.25,0 611.25,0 611.25,0 846.25,0 846.25,0 846.25,0 846.25,487 846.25,487 846.25,487 \
+629.25,487 629.25,487 629.25,487 629.25,482.51 629.25,478.01"];
+}

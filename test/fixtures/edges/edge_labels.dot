@@ -1,0 +1,1 @@
+digraph{node[shape=box];cmp->t[label="true"];cmp->f[label="false"];t->j;f->j}

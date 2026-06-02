@@ -1,0 +1,20 @@
+digraph {
+	graph [bb="0,0,70,188"];
+	node [label="\N",
+		shape=box
+	];
+	subgraph cluster_a {
+		graph [bb="0,0,70,124"];
+		X	[height=0.5,
+			pos="35,98",
+			width=0.75];
+		Y	[height=0.5,
+			pos="35,26",
+			width=0.75];
+		X -> Y	[pos="e,35,44.356 35,79.596 35,77.249 35,65.159 35,55.711"];
+	}
+	e	[height=0.5,
+		pos="35,170",
+		width=0.75];
+	e -> X	[pos="e,35,116.36 35,151.6 35,149.25 35,137.16 35,127.71"];
+}

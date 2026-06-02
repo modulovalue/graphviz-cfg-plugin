@@ -1,0 +1,1 @@
+digraph{node[shape=record,fontname="Courier"];sw[label="<f0>c0|<f1>c1|<f2>c2"];a;b;c;sw:f0->a;sw:f1->b;sw:f2->c}

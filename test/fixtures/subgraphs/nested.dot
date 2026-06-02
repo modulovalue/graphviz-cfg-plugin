@@ -1,0 +1,1 @@
+digraph{node[shape=box];subgraph cluster_o{label="outer";A;subgraph cluster_i{label="inner";B;C;B->C}} entry->A->B;C->exit}

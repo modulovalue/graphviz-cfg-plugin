@@ -1,0 +1,14 @@
+digraph {
+	graph [bb="0,0,62,129"];
+	node [label="\N"];
+	N	[height=0.79167,
+		label=<<table border="1" cellborder="0"><tr><td>head</td></tr><tr><td>v0 = 1</td></tr></table>>,
+		pos="31,100.5",
+		shape=none,
+		width=0.86111];
+	M	[height=0.5,
+		pos="31,18",
+		width=0.75];
+	N -> M	[pos="e,31,36.38 31,71.897 31,70.613 31,57.624 31,47.636",
+		shape=box];
+}

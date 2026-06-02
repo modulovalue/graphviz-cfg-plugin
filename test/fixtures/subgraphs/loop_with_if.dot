@@ -1,0 +1,18 @@
+digraph CFG {
+  node [shape=box, fontname="Courier"];
+  entry;
+  subgraph cluster_loop {
+    label="for (i=0; i<n; i++)";
+    head [label="loop head"];
+    subgraph cluster_if {
+      label="if (a[i] > 0)";
+      test; pos; neg; merge;
+      test -> pos [cfgbias=left];
+      test -> neg [cfgbias=right];
+      pos -> merge; neg -> merge;
+    }
+    latch [label="i++"];
+  }
+  done;
+  entry -> head; head -> test; merge -> latch; latch -> head; head -> done [cfgbias=right];
+}

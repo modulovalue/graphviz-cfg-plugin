@@ -1,0 +1,41 @@
+digraph {
+	graph [bb="0,0,86,324"];
+	node [label="\N",
+		shape=box
+	];
+	subgraph cluster_o {
+		graph [bb="0,56,86,284.5",
+			label=outer,
+			lheight=0.23,
+			lp="21.875,272.25",
+			lwidth=0.39
+		];
+		subgraph cluster_i {
+			graph [bb="8,64,78,212.5",
+				label=inner,
+				lheight=0.23,
+				lp="29.875,200.25",
+				lwidth=0.39
+			];
+			B	[height=0.5,
+				pos="43,162",
+				width=0.75];
+			C	[height=0.5,
+				pos="43,90",
+				width=0.75];
+			B -> C	[pos="e,43,108.36 43,143.6 43,141.25 43,129.16 43,119.71"];
+		}
+		A	[height=0.5,
+			pos="43,234",
+			width=0.75];
+	}
+	A -> B	[pos="e,43,180.36 43,215.6 43,213.25 43,201.16 43,191.71"];
+	exit	[height=0.5,
+		pos="43,18",
+		width=0.75];
+	C -> exit	[pos="e,43,36.356 43,71.596 43,69.249 43,57.159 43,47.711"];
+	entry	[height=0.5,
+		pos="43,306",
+		width=0.75];
+	entry -> A	[pos="e,43,252.36 43,287.6 43,285.25 43,273.16 43,263.71"];
+}

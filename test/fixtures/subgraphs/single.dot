@@ -1,0 +1,1 @@
+digraph{node[shape=box];subgraph cluster_a{label="region";X;Y;X->Y} E->X;Y->F}

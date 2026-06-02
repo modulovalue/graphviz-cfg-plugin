@@ -1,0 +1,1 @@
+digraph CFG{node[shape=box,fontname="Courier"];entry;subgraph cluster_if{label="if (x>0)";cmp;then;els;cmp->then[color="#22aa22",cfgbias=left];cmp->els[color="#cc2222",cfgbias=right]} subgraph cluster_loop{label="for";head;body;head->body[cfgbias=left,color="#22aa22"];body->head} entry->cmp;then->head;els->head;head->ret[color="#cc2222",cfgbias=right]}

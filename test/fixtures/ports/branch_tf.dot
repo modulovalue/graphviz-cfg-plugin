@@ -1,0 +1,1 @@
+digraph{node[shape=record];b[label="{cmp|{<t>true|<f>false}}"];L;R;b:t->L;b:f->R}

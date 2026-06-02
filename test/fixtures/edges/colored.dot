@@ -1,0 +1,1 @@
+digraph{node[shape=box];A->B[color="#22aa22"];A->C[color="#cc2222"]}

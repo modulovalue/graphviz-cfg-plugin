@@ -1,0 +1,23 @@
+digraph {
+	graph [bb="0,0,278.5,180"];
+	node [label="\N",
+		shape=box
+	];
+	tiny	[height=0.5,
+		label=x,
+		pos="139.25,162",
+		width=0.75];
+	huge	[height=0.5,
+		label="a very long block label that is quite wide indeed",
+		pos="139.25,90",
+		width=3.8681];
+	tiny -> huge	[label="medium label",
+		lp="101.38,123.4",
+		pos="e,139.25,108.36 139.25,143.6 139.25,141.25 139.25,129.16 139.25,119.71"];
+	mid	[height=0.5,
+		pos="139.25,18",
+		width=0.75];
+	huge -> mid	[label="medium label",
+		lp="101.38,51.404",
+		pos="e,139.25,36.356 139.25,71.596 139.25,69.249 139.25,57.159 139.25,47.711"];
+}

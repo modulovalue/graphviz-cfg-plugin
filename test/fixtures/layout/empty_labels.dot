@@ -1,0 +1,1 @@
+digraph{node[shape=box];A[label=""];B[label=""];A->B}

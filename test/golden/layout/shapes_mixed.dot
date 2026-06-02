@@ -1,0 +1,23 @@
+digraph {
+	graph [bb="0,0,54,252"];
+	node [label="\N"];
+	A	[height=0.5,
+		pos="27,234",
+		shape=ellipse,
+		width=0.75];
+	B	[height=0.5,
+		pos="27,162",
+		shape=box,
+		width=0.75];
+	A -> B	[pos="e,27,180.36 27,215.6 27,213.25 27,201.16 27,191.71"];
+	C	[height=0.5,
+		pos="27,90",
+		shape=circle,
+		width=0.5];
+	B -> C	[pos="e,27,108.36 27,143.6 27,141.25 27,129.16 27,119.71"];
+	D	[height=0.5,
+		pos="27,18",
+		shape=diamond,
+		width=0.75];
+	C -> D	[pos="e,27,36.356 27,71.596 27,69.249 27,57.159 27,47.711"];
+}

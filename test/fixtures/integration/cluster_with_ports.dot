@@ -1,0 +1,1 @@
+digraph{node[shape=record,fontname="Courier"];subgraph cluster_d{label="dispatch";sw[label="<c0>c0|<c1>c1|<c2>c2"];sw:c0->h0;sw:c1->h1;sw:c2->h2}}

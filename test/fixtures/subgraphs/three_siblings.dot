@@ -1,0 +1,1 @@
+digraph{node[shape=box];subgraph cluster_a{label=A;A1} subgraph cluster_b{label=B;B1} subgraph cluster_c{label=C;C1} s->A1;s->B1;s->C1;A1->t;B1->t;C1->t}

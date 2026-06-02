@@ -1,0 +1,1 @@
+digraph{node[shape=none];t[label=<<table border="0" cellborder="1"><tr><td port="l">L</td><td port="r">R</td></tr></table>>];t:l->x;t:r->y}

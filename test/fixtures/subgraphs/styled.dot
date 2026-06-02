@@ -1,0 +1,1 @@
+digraph{node[shape=box];subgraph cluster_a{label="styled";style="filled,rounded";color="#dde";X;Y;X->Y} e->X}

@@ -54,7 +54,11 @@ test: install
 	printf 'digraph{node[shape=box];B0->B1;B1->B2[cfgbias=left];B1->B3[cfgbias=right];B2->B1}' \
 	  | dot -Kcfg -Tpng -o /tmp/cfg_plugin_test.png && echo "wrote /tmp/cfg_plugin_test.png"
 
+# Fixture-based regression suite (see test/README.md).
+check: install
+	./test/run.sh
+
 clean:
 	rm -f $(LIBNAME) libgvplugin_cfg.$(LIBEXT)
 
-.PHONY: all install uninstall test clean
+.PHONY: all install uninstall test check clean
